@@ -7,7 +7,7 @@
 	(title_block
 		(title "Cyclops (Team 30)")
 		(date "2025-11-28")
-		(rev "1.1.1")
+		(rev "1.2")
 		(company "Concordia University, Department of Electrical and Computer Engineering")
 	)
 	(lib_symbols
