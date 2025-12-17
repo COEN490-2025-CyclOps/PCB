@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Cyclops (Team 30)")
-		(date "2025-12-10")
-		(rev "2.0")
+		(date "2025-12-16")
+		(rev "2.1")
 		(company "Concordia University, Department of Electrical and Computer Engineering")
 	)
 	(lib_symbols
@@ -2374,8 +2374,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U103"
-				(at 1.9686 22.86 0)
+			(property "Reference" "U101"
+				(at -4.318 -3.302 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2384,7 +2384,7 @@
 				)
 			)
 			(property "Value" "MCP3021"
-				(at 1.9686 20.32 0)
+				(at -4.318 -5.588 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2392,7 +2392,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "MCP3021:SOT-23"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2500,6 +2500,51 @@
 					(hide yes)
 				)
 			)
+			(property "MPN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "OC_FARNELL" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "OC_NEWARK" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PACKAGE" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "SUPPLIER" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(symbol "MCP3021_0_0"
 				(rectangle
 					(start -12.7 13.97)
@@ -2522,7 +2567,7 @@
 							)
 						)
 					)
-					(number "P$3"
+					(number "3"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2540,25 +2585,7 @@
 							)
 						)
 					)
-					(number "P$1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -6.35 -6.35 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "P$2"
+					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2576,7 +2603,7 @@
 							)
 						)
 					)
-					(number "P$4"
+					(number "4"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2594,7 +2621,27 @@
 							)
 						)
 					)
-					(number "P$5"
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MCP3021_1_0"
+				(pin bidirectional line
+					(at -6.35 -6.35 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4040,16 +4087,16 @@
 		(uuid "8e68ef5b-05fb-4192-8571-9ca04f0db5ce")
 	)
 	(junction
+		(at 38.1 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be76921a-9101-4236-99f7-49fa7806ab5f")
+	)
+	(junction
 		(at 168.91 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5267b26-0738-41ff-982e-515d694eb6c3")
-	)
-	(junction
-		(at 38.1 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d974490c-17f8-4f76-9f1e-55733ca0cb4c")
 	)
 	(junction
 		(at 46.99 43.18)
@@ -4080,10 +4127,6 @@
 	(no_connect
 		(at 152.4 64.77)
 		(uuid "24b15e57-f6f0-4934-bd8f-feeefb08a81a")
-	)
-	(no_connect
-		(at 152.4 57.15)
-		(uuid "2a682d63-a69b-4ce4-a74f-7800844d213c")
 	)
 	(no_connect
 		(at 165.1 64.77)
@@ -4133,6 +4176,10 @@
 		(at 152.4 62.23)
 		(uuid "e9a72168-5b27-482c-a9df-ff8224c0cf29")
 	)
+	(no_connect
+		(at 152.4 85.09)
+		(uuid "f0b2e76c-a94d-447d-a587-70c2c595f60c")
+	)
 	(wire
 		(pts
 			(xy 149.86 39.37) (xy 152.4 39.37)
@@ -4152,16 +4199,6 @@
 			(type default)
 		)
 		(uuid "077b3f27-24cf-4ad2-b704-980d8fde0705")
-	)
-	(wire
-		(pts
-			(xy 38.1 80.01) (xy 38.1 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07c7ddbc-580d-48bb-b7b9-f8e54e858b52")
 	)
 	(wire
 		(pts
@@ -4272,6 +4309,16 @@
 			(type default)
 		)
 		(uuid "207cdc0c-1aff-4207-bdb3-162ff40cce33")
+	)
+	(wire
+		(pts
+			(xy 38.1 80.01) (xy 45.72 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "263032b3-daae-4d02-b168-917da41a650d")
 	)
 	(wire
 		(pts
@@ -4512,6 +4559,16 @@
 			(type default)
 		)
 		(uuid "69a1f879-ee21-441c-9aad-f04d294cd668")
+	)
+	(wire
+		(pts
+			(xy 138.43 57.15) (xy 152.4 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b8da9cd-e714-42dc-821a-f026b0abe254")
 	)
 	(wire
 		(pts
@@ -4795,16 +4852,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 85.09) (xy 152.4 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad21cf0e-d3e1-465d-9a78-cf423f5dbdad")
-	)
-	(wire
-		(pts
 			(xy 157.48 148.59) (xy 160.02 148.59)
 		)
 		(stroke
@@ -5025,13 +5072,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 80.01) (xy 45.72 80.01)
+			(xy 38.1 80.01) (xy 38.1 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e699704b-73bd-48de-bfdd-20bd66fec586")
+		(uuid "e3cc3395-280f-4dab-8130-4463d7d76c2a")
 	)
 	(wire
 		(pts
@@ -5273,16 +5320,6 @@
 		)
 		(uuid "a1a92240-b89d-4652-aa0f-1fb6dc142464")
 	)
-	(label "Voltage Div EN"
-		(at 138.43 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "aa29ec6b-1faf-441c-9879-738410df57d4")
-	)
 	(label "I2C_SDA"
 		(at 138.43 72.39 180)
 		(effects
@@ -5292,6 +5329,16 @@
 			(justify right bottom)
 		)
 		(uuid "bb6016a6-7447-476c-a80f-c94a50fd2a16")
+	)
+	(label "Voltage Div EN"
+		(at 138.43 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c633c7e6-f12d-4e33-9fae-3d30790fa86f")
 	)
 	(label "UART_RX"
 		(at 76.2 134.62 0)
@@ -6086,7 +6133,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_ZH_S3B-ZR-SM4A-TF_1x03-1MP_P1.50mm_Horizontal"
 			(at 251.46 114.3 0)
 			(effects
 				(font
@@ -6204,7 +6251,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_ZH_S2B-ZR-SM4A-TF_1x02-1MP_P1.50mm_Horizontal"
 			(at 165.1 121.92 0)
 			(effects
 				(font
@@ -6319,7 +6366,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B3B-ZR_1x03_P1.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_ZH_S3B-ZR-SM4A-TF_1x03-1MP_P1.50mm_Horizontal"
 			(at 251.46 152.4 0)
 			(effects
 				(font
@@ -6434,7 +6481,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 			(at 219.71 138.43 0)
 			(effects
 				(font
@@ -7259,7 +7306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B4B-ZR_1x04_P1.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_ZH_S4B-ZR-SM4A-TF_1x04-1MP_P1.50mm_Horizontal"
 			(at 93.98 134.62 0)
 			(effects
 				(font
@@ -7510,7 +7557,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 			(at 219.71 176.53 0)
 			(effects
 				(font
@@ -8908,7 +8955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_ZH_S2B-ZR-SM4A-TF_1x02-1MP_P1.50mm_Horizontal"
 			(at 165.1 146.05 0)
 			(effects
 				(font
@@ -9713,7 +9760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MCP3021:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 			(at 63.5 88.9 0)
 			(effects
 				(font
@@ -9866,19 +9913,19 @@
 				(hide yes)
 			)
 		)
-		(pin "P$3"
+		(pin "3"
 			(uuid "5582a38a-bcdb-43fc-9435-91425100ce67")
 		)
-		(pin "P$4"
+		(pin "4"
 			(uuid "e785fe0c-4184-47ba-8af7-619ffdebac31")
 		)
-		(pin "P$1"
+		(pin "5"
 			(uuid "3288fcf7-9967-41a5-9feb-8763e9375d81")
 		)
-		(pin "P$5"
+		(pin "2"
 			(uuid "ebcc6320-ae61-4200-842d-97daa0ace73c")
 		)
-		(pin "P$2"
+		(pin "1"
 			(uuid "0a5644be-f972-4386-b149-9b18df686748")
 		)
 		(instances
