@@ -191,7 +191,8 @@
         0.1,
         0.2,
         0.3,
-        0.5
+        0.5,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -515,14 +516,14 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "..\\Board export\\Rev 2.2\\Board Capstone Rev 2.2.csv",
+    "bom_export_filename": "..\\Board export\\Rev 2.4\\Board Capstone BOM.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
       "keep_line_breaks": false,
       "keep_tabs": false,
-      "name": "CSV",
-      "ref_delimiter": ",",
+      "name": "---",
+      "ref_delimiter": ", ",
       "ref_range_delimiter": "",
       "string_delimiter": "\""
     },
